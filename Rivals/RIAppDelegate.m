@@ -7,6 +7,8 @@
 //
 
 #import "RIAppDelegate.h"
+#import "RIHistoryViewController.h"
+#import "RITImerViewController.h"
 
 @implementation RIAppDelegate
 
@@ -14,6 +16,23 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    
+    UITabBarController *tabBarController = [UITabBarController new];
+    // [self.window addSubview:tabBarController];
+    
+    RIHistoryViewController *historyViewController = [RIHistoryViewController new];
+    historyViewController.tabBarItem.title = @"History";
+    
+    RITImerViewController *timerViewController = [RITImerViewController new];
+    timerViewController.tabBarItem.title = @"Timer";
+    
+    tabBarController.viewControllers = @[historyViewController, timerViewController];
+    
+    self.window.rootViewController = tabBarController;
+    
+    
+    
+    // above
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

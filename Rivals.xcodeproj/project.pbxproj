@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63DE931C19D398CD0020B71B /* RITImerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DE931B19D398CD0020B71B /* RITImerViewController.m */; };
+		63DE931F19D398FE0020B71B /* RIHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DE931E19D398FE0020B71B /* RIHistoryViewController.m */; };
 		713E083A193E77E9006CA563 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 713E0839193E77E9006CA563 /* Foundation.framework */; };
 		713E083C193E77E9006CA563 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 713E083B193E77E9006CA563 /* CoreGraphics.framework */; };
 		713E083E193E77E9006CA563 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 713E083D193E77E9006CA563 /* UIKit.framework */; };
@@ -32,6 +34,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		63DE931A19D398CD0020B71B /* RITImerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RITImerViewController.h; sourceTree = "<group>"; };
+		63DE931B19D398CD0020B71B /* RITImerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RITImerViewController.m; sourceTree = "<group>"; };
+		63DE931D19D398FE0020B71B /* RIHistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RIHistoryViewController.h; sourceTree = "<group>"; };
+		63DE931E19D398FE0020B71B /* RIHistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RIHistoryViewController.m; sourceTree = "<group>"; };
 		713E0836193E77E9006CA563 /* Rivals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rivals.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		713E0839193E77E9006CA563 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		713E083B193E77E9006CA563 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -109,6 +115,10 @@
 			children = (
 				713E0848193E77E9006CA563 /* RIAppDelegate.h */,
 				713E0849193E77E9006CA563 /* RIAppDelegate.m */,
+				63DE931D19D398FE0020B71B /* RIHistoryViewController.h */,
+				63DE931E19D398FE0020B71B /* RIHistoryViewController.m */,
+				63DE931A19D398CD0020B71B /* RITImerViewController.h */,
+				63DE931B19D398CD0020B71B /* RITImerViewController.m */,
 				713E084B193E77E9006CA563 /* Images.xcassets */,
 				713E0840193E77E9006CA563 /* Supporting Files */,
 			);
@@ -240,7 +250,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63DE931F19D398FE0020B71B /* RIHistoryViewController.m in Sources */,
 				713E0846193E77E9006CA563 /* main.m in Sources */,
+				63DE931C19D398CD0020B71B /* RITImerViewController.m in Sources */,
 				713E084A193E77E9006CA563 /* RIAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,6 +450,7 @@
 				713E0864193E77E9006CA563 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		713E0865193E77E9006CA563 /* Build configuration list for PBXNativeTarget "RivalsTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +459,7 @@
 				713E0867193E77E9006CA563 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
